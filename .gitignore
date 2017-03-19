@@ -252,4 +252,6 @@ paket-files/
 *.sln.iml
 
 
-proj.win32/Debug.win32/*.*
+proj.win32/Debug.win32/
+/proj.win32/Debug.win32/fonts/arial.ttf
+/proj.win32/Debug.win32/fonts/Marker Felt.ttf

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="16" height="16" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="brackish" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/LPC Base Assets/tiles/brackish.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="19" name="inside" tilewidth="32" tileheight="32" tilecount="100" columns="10">
+  <image source="../Tiles/LPC Base Assets/tiles/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="119" name="castlefloors_outside" tilewidth="32" tileheight="32" tilecount="20" columns="4">
+  <image source="../Tiles/LPC Base Assets/tiles/castlefloors_outside.png" width="128" height="160"/>
+ </tileset>
+ <tileset firstgid="139" name="cement" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/LPC Base Assets/tiles/cement.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="157" name="house" tilewidth="32" tileheight="32" tilecount="63" columns="9">
+  <image source="../Tiles/LPC Base Assets/tiles/house.png" width="288" height="224"/>
+ </tileset>
+ <tileset firstgid="220" name="rock" tilewidth="32" tileheight="32" tilecount="2" columns="2">
+  <image source="../Tiles/LPC Base Assets/tiles/rock.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="222" name="path" tilewidth="32" tileheight="32" tilecount="2" columns="2">
+  <image source="../Tiles/path.png" width="64" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="collidable" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="collidable" type="bool" value="false"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="floor" width="16" height="16">
+  <data encoding="csv">
+196,188,188,188,188,188,188,188,188,188,188,188,188,188,188,198,
+217,146,146,146,146,146,146,146,146,146,146,146,146,146,146,217,
+217,156,146,146,146,146,146,155,146,146,146,146,154,146,146,217,
+217,146,146,146,146,146,146,146,146,146,146,146,146,146,146,217,
+217,154,155,146,146,146,155,154,146,146,146,146,156,156,146,217,
+217,154,146,154,146,146,146,146,146,146,146,146,154,146,146,217,
+217,146,146,146,146,146,146,146,146,146,146,146,146,146,146,217,
+217,146,146,146,146,146,146,154,155,146,146,146,146,146,146,217,
+217,146,146,154,146,146,154,146,146,146,146,154,146,146,155,217,
+217,146,146,146,146,146,154,155,146,146,146,146,146,146,146,217,
+217,146,146,156,155,146,146,146,146,146,155,154,146,146,146,217,
+217,146,146,146,146,146,146,146,146,146,146,146,146,146,146,217,
+217,146,154,155,146,155,146,146,146,146,146,146,156,154,146,217,
+217,154,154,146,146,146,146,146,146,146,146,146,146,146,146,217,
+217,154,146,146,146,146,146,146,146,146,146,146,146,155,155,217,
+205,188,188,188,188,188,188,188,188,188,188,188,188,188,188,207
+</data>
+ </layer>
+ <layer name="colliders" width="16" height="16" opacity="0.25">
+  <data encoding="csv">
+222,222,222,222,222,222,222,222,222,222,222,222,222,222,222,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,223,223,223,223,223,223,223,223,223,223,223,223,223,223,222,
+222,222,222,222,222,222,222,222,222,222,222,222,222,222,222,222
+</data>
+ </layer>
+</map>
