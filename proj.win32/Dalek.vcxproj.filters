@@ -51,6 +51,9 @@
     <ClCompile Include="..\Classes\Engine\Cell.cpp">
       <Filter>src\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Utils\KBListener.cpp">
+      <Filter>src\Utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -85,6 +88,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Engine\Cell.h">
       <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Utils\KBListener.h">
+      <Filter>src\Utils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

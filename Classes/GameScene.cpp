@@ -1,5 +1,6 @@
 #include "GameScene.h"
 #include "Utils\TileMapParser.h"
+#include "Utils\KBListener.h"
 
 USING_NS_CC;
 
@@ -52,6 +53,24 @@ bool GameScene::init()
 	//label->setPosition(Vec2(origin.x + visibleSize.width / 2 - mapSize.width / 2, origin.y + visibleSize.height / 2 + mapSize.height / 2 + 5));
 	label->setPosition(Vec2(origin.x + 5, origin.y+visibleSize.height));
 	this->addChild(label, 1);
+
+    auto listener = EventListenerKeyboard::create();
+   // listener->onKeyPressed = CC_CALLBACK_2(KBListener::OnKeyPressed, this);
+    //listener->onKeyReleased = CC_CALLBACK_2(KBListener::OnKeyReleased, this);
+
+    listener->onKeyReleased = [=](EventKeyboard::KeyCode keyCode, Event* event) 
+    {
+        _collidersLayer->setVisible(false);
+    };
+
+    listener->onKeyPressed = [=](EventKeyboard::KeyCode keyCode, Event* event)
+    {
+        if (keyCode == EventKeyboard::KeyCode::KEY_M)
+            _collidersLayer->setVisible(true);
+    };
+
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+
 
 	return true;
 }

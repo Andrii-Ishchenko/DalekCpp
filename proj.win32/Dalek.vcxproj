@@ -153,6 +153,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\Engine\MovingObject.cpp" />
     <ClCompile Include="..\Classes\GameScene.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\Utils\KBListener.cpp" />
     <ClCompile Include="..\Classes\Utils\TileMapParser.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -166,6 +167,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\Engine\MovingObject.h" />
     <ClInclude Include="..\Classes\GameScene.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\Utils\KBListener.h" />
     <ClInclude Include="..\Classes\Utils\TileMapParser.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
