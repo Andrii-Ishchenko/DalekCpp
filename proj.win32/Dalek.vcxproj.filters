@@ -51,7 +51,7 @@
     <ClCompile Include="..\Classes\Engine\Cell.cpp">
       <Filter>src\Engine</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Utils\KBListener.cpp">
+    <ClCompile Include="..\Classes\Utils\KeyboardEventRoot.cpp">
       <Filter>src\Utils</Filter>
     </ClCompile>
   </ItemGroup>
@@ -89,7 +89,7 @@
     <ClInclude Include="..\Classes\Engine\Cell.h">
       <Filter>src\Engine</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Utils\KBListener.h">
+    <ClInclude Include="..\Classes\Utils\KeyboardEventRoot.h">
       <Filter>src\Utils</Filter>
     </ClInclude>
   </ItemGroup>
